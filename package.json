@@ -13,14 +13,13 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "graphql:codegen": "graphql codegen"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
     "@mdx-js/react": "^3.0.0",
+    "@types/graphql": "^14.5.0",
     "gatsby": "^5.12.4",
-    "gatsby-plugin-emotion": "^8.12.0",
     "gatsby-plugin-google-gtag": "^5.12.3",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
@@ -28,15 +27,24 @@
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
     "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-source-wordpress": "^7.12.3",
     "gatsby-transformer-sharp": "^5.12.3",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "react-query": "^3.39.3",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "autoprefixer": "^10.4.16",
+    "gatsby-plugin-postcss": "^6.13.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.1.6"
   }
 }
