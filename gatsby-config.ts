@@ -34,6 +34,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
+    "gatsby-plugin-use-query-params",
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {

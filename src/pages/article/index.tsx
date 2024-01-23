@@ -2,10 +2,10 @@ import React from "react";
 import { useArticle } from "../../data/article";
 import Header from "../../components/Header";
 import { withQueryClient } from "../../components/QueryClientHOC";
+import { StringParam, useQueryParam } from "use-query-params";
 
 const ArticlePage = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const articleId = urlParams.get("article_id");
+  const [articleId] = useQueryParam("article_id", StringParam);
   const { data } = useArticle(articleId!);
 
   return (
