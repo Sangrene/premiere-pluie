@@ -15,7 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
         NOS DERNIERS ARTICLES
       </h2>
       <ArticleList categoryName="Actualités" number={5} />
-      <a className="border-2 rounded-full border-primary py-1 flex justify-center m-2 hover:bg-primary hover:bg-opacity-10">
+      <a href="/articles" className="border-2 rounded-full border-primary py-1 flex justify-center m-2 hover:bg-primary hover:bg-opacity-10">
         TOUS LES ARTICLES
       </a>
       <h2 className="font-extrabold text-black text-3xl p-5 m-2">EDITOS</h2>

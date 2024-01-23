@@ -6,3 +6,10 @@
   font-family: "Unbounded";
   src: url("../../public/fonts/Unbounded-VariableFont_wght.ttf");
 }
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -23,10 +23,10 @@ const HeaderCarousel = () => {
               textAlign: "start",
             }}
           >
-            <h2 className="text-white font-extrabold text-2xl">
+            <h2 className="text-white font-extrabold text-3xl">
               {article.title}
             </h2>
-            <span className="text-primary font-thin">
+            <span className="text-primary font-thin text-xl">
               {new Date(article.date).toLocaleDateString("fr-FR", {
                 year: "numeric",
                 month: "long",

@@ -6,14 +6,13 @@ import { gql } from "graphql-request";
 const useGetCategories = () => {
   return useQuery("get-categories", async () => {
     const { categories } = await graphQLClient.request<{
-      categories: { edges: { node: { id: string; name: string } }[] };
+      categories: { nodes: { id: string; name: string }[] };
     }>(gql`
       query {
         categories {
-          edges {
-            node {
-              name
-            }
+          nodes {
+            id
+            name
           }
         }
       }
@@ -26,12 +25,12 @@ const CategorySelector = () => {
   const { data } = useGetCategories();
   return (
     <div className="flex flex-wrap">
-      {data?.edges.map((edge) => (
+      {data?.nodes.map((node) => (
         <div
           className="rounded-full border-white border-2 py-2 px-4 m-1 hover:font-bold"
-          key={edge.node.id}
+          key={node.id}
         >
-          {edge.node.name}
+          {node.name}
         </div>
       ))}
     </div>
