@@ -1,6 +1,7 @@
 import React from "react";
 import { useArticle } from "../../data/article";
 import Header from "../../components/Header";
+import { withQueryClient } from "../../components/QueryClientHOC";
 
 const ArticlePage = () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -26,4 +27,4 @@ const ArticlePage = () => {
   );
 };
 
-export default ArticlePage;
+export default withQueryClient(ArticlePage);

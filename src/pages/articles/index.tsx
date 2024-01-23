@@ -6,6 +6,7 @@ import { graphQLClient } from "../../data/dataFetching";
 import { gql } from "graphql-request";
 import ArticleList from "../../components/ArticleList";
 import ArticleCard from "../../components/ArticleCard";
+import { withQueryClient } from "../../components/QueryClientHOC";
 
 interface Category {
   id: string;
@@ -122,4 +123,4 @@ const ArticlePage = () => {
   );
 };
 
-export default ArticlePage;
+export default withQueryClient(ArticlePage);
