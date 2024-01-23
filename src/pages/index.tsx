@@ -11,7 +11,6 @@ import { withQueryClient } from "../components/QueryClientHOC";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <QueryClientProvider client={queryClient}>
       <main className="font-unbounded transition-all">
         <Header />
         <HeaderCarousel />
@@ -36,7 +35,6 @@ const IndexPage: React.FC<PageProps> = () => {
           EN SAVOIR PLUS
         </a>
       </main>
-    </QueryClientProvider>
   );
 };
 

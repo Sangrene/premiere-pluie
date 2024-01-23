@@ -37,7 +37,7 @@
     "react-markdown": "^9.0.1",
     "react-query": "^3.39.3",
     "react-responsive-carousel": "^3.2.23",
-    "use-query-params": "^2.2.1"
+    "use-query-params": "^1"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
